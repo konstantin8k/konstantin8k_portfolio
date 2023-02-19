@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "PixAntiqua";
+  src: url(./fonts/PixAntiqua.ttf);
+  font-weight: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: solid black 1px; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: PixAntiqua;
+  scroll-behavior: smooth;
+  font-weight: 100;
+}
+
+body {
+  background-color: rgb(0, 241, 100);
+  color: rgb(255, 255, 255);
+}
+
+a {
+  color: rgba(255, 255, 255, 0.623);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button,
+button:focus {
+  transition: 0.1s;
+  outline: none;
+  background: white;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+button:active {
+  outline: none;
+  background: rgb(116, 34, 192);
+  border: 2px solid rgb(172, 172, 172);
+}
+
+button img {
+  max-width: 30px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.menu {
+  bottom: 0;
+  position: fixed;
+  padding: 1rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.692);
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.head {
+  background-color: blueviolet;
+}
+
+.head-1 {
+  padding-right: 1rem;
+  height: auto;
+}
+
+.head-1 h1 {
+  font-weight: 100;
+}
+
+.head h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  /* color: rgb(211, 211, 211); */
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.head-2 {
+  height: 50px;
+  min-width: 3rem;
+}
+
+.img-1 {
+  max-width: 40vh;
+  border-radius: 500px;
+}
+
+.about-me-2 {
+  height: 100vh;
+  flex-direction: column;
+}
+
+.about-me-2 h1 {
+  color: black;
+  font-size: 3rem;
+}
+
+.about-me-2 img {
+  max-width: 20px;
+}
+
+.about-me-text {
+  background-color: blueviolet;
+  border-radius: 5px;
+  max-width: 70vh;
+  color: rgb(255, 255, 255);
+  margin: 30px;
+  text-align: centers;
+}
+
+.about-me-text h1 {
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.about-me-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.works {
+  background-color: aqua;
+}
+
+.contact {
+  background-color: blueviolet;
+}
+
+.white-box {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: small;
+  background-color: blueviolet;
+  /* box-shadow: 0px 0px 10px 0.5px rgba(14, 14, 14, 0.219); */
+  border-radius: 5px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+  text-align: center;
+}
+
+.white-box-1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: small;
+  background-color: rgba(255, 255, 255, 0.904);
+  /* box-shadow: 0px 0px 10px 0.5px rgba(14, 14, 14, 0.466); */
+  /* border-radius: 5px; */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 28px;
+  color: rgb(19, 19, 19);
+  /* text-align: center; */
+}
+
+.about-me-2 div {
+  display: flex;
+  flex-direction: columns;
+}
+
+.line {
+  background-color: black;
+  padding: 3px;
+  margin: 1px;
+  margin-left: 20vh;
+  margin-right: 20vh;
+}
+
+.contact img {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.1s;
+}
+
+.contact-list img:active {
+  outline: none;
+  background: rgb(116, 34, 192);
+  border: 2px solid rgb(172, 172, 172);
+}
+
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .head-1 {
+    padding-right: 0;
+  }
+
+  .head button {
+    margin-top: 1rem;
+  }
+
+  .head-1 h1,
+  h4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
