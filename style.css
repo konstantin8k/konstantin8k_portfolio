@@ -208,6 +208,10 @@ button img {
   border: 2px solid rgb(172, 172, 172);
 }
 
+.works {
+  background-color: rgb(27, 27, 27);
+}
+
 @media (max-width: 700px) {
   .menu {
     display: none;
